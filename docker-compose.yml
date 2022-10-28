@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  apachesrv:
+    image: httpd
+    ports:
+      - "8080:80"
+    volumes:
+      - /compose/data:/usr/local/apache2/htdocs
